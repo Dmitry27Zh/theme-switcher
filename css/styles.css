@@ -44,6 +44,6 @@ h3 {
 
 .card {
   padding: 1rem;
-  border-top: 0.8rem solid rgba(0, 0, 0, 0.7);
+  border-top: 0.8rem solid rgba(0, 0, 0, 0.5);
   border-radius: 0.6rem;
 }
