@@ -1,0 +1,27 @@
+:root {
+  --clr-body-bg: hsl(0 0% 90%);
+  --clr-card-bg: hsl(0 0% 100%);
+  --clr-text: hsl(0 0% 15%);
+  --clr-heading: hsl(0 0% 25%);
+}
+
+body {
+  color: var(--clr-text);
+  background: var(--clr-body-bg);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-heading);
+}
+
+.card {
+  background: var(--clr-card-bg);
+}
+
+.theme-switcher > fieldset {
+  margin: 0;
+  padding: 10px 20px;
+  border: none;
+}
