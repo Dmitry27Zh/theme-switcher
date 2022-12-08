@@ -20,8 +20,53 @@ h3 {
   background: var(--clr-card-bg);
 }
 
+.theme-switcher {
+  display: flex;
+  width: fit-content;
+  margin-inline: auto;
+}
+
 .theme-switcher > fieldset {
+  display: flex;
+  gap: 1rem;
   margin: 0;
-  padding: 10px 20px;
+  padding: 1rem 3rem;
+  background: #ffffff;
   border: none;
+  border-radius: 0 0 1rem 1rem;
+}
+
+input[name='theme'] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  outline: 3px solid var(--radio-color, currentColor);
+  outline-offset: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[name='theme'][value='light'] {
+  --radio-color: gray;
+}
+
+input[name='theme'][value='pink'] {
+  --radio-color: pink;
+}
+
+input[name='theme'][value='blue'] {
+  --radio-color: blue;
+}
+
+input[name='theme'][value='green'] {
+  --radio-color: green;
+}
+
+input[name='theme'][value='dark'] {
+  --radio-color: #232323;
+}
+
+input[name='theme']:checked {
+  background: var(--radio-color);
 }
